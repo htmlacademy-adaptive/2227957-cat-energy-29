@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарья Скрипченко](https://up.htmlacademy.ru/adaptive/29/user/2227957).
-* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
