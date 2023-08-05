@@ -1,7 +1,7 @@
 .hero {
-  font-family: "Oswald";
-  background-color: #68b738d9;
-  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: rgba(104, 183, 56, 0.85);
   position: relative;
   text-align: center;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../img/index-hero-background.png);
+    background-image: url("../img/index-hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -25,6 +25,7 @@
 .hero__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .hero__subtitle {
