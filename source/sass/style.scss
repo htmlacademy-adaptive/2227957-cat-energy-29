@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+@import "address.scss";
+@import "contacts.scss";
+@import "extra-product.scss";
+@import "extra-products.scss";
+@import "features.scss";
+@import "hero.scss";
+@import "html-academy.scss";
+@import "logo-img.scss";
+@import "logo-title.scss";
+@import "main-footer.scss";
+@import "main-header.scss";
+@import "main-nav.scss";
+@import "form-main.scss";
+@import "page.scss";
+@import "products.scss";
+@import "product.scss";
+@import "program-form.scss";
+@import "reviews.scss";
+@import "show-more.scss";
+@import "social.scss";
+@import "button.scss";
+@import "programs.scss";
+@import "change.scss";
+@import "catalog-main.scss";
+@import "main.scss";
+@import "promotion.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
