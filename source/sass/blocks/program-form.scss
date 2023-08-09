@@ -1,0 +1,31 @@
+.program-form {
+  font-size: 16px;
+}
+
+.program-form__group {
+  border: none;
+  padding: 25px 0;
+}
+
+.program-form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.program-form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.program-form__label {
+  text-transform: uppercase;
+}
+
+.program-form__input--text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
