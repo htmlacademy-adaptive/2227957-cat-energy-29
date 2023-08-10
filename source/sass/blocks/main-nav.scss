@@ -39,7 +39,10 @@
   }
 
   & .main-nav__link {
-    color: $inverse-text;
+
+    @media (min-width: $desktop-width) {
+      color: $inverse-text;
+    }
   }
 }
 

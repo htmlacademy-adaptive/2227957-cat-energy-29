@@ -1,5 +1,18 @@
 .program-form {
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__wrapper--general {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .program-form__group {
@@ -21,6 +34,10 @@
 
 .program-form__label {
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 13px;
+  align-items: center;
 }
 
 .program-form__input--text {
@@ -28,4 +45,71 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+}
+
+.program-form__item:not(:last-child) {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.program-form__wrapper--contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
+.program-form__comment {
+  width: 100%;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+  }
+}
+
+.program-form__list--extra {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 30px);
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px;
+    gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10%;
+  }
+}
+
+.program-form__wrapper--submit {
+  display: flex;
+}
+
+.program-form__submit {
+  padding: 14px 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 188px;
+    margin-right: 80px;
+  }
 }
