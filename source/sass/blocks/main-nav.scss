@@ -3,16 +3,67 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav--background {
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/index-hero-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(104, 183, 56, 0.85);
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  & .main-nav__link {
+    color: $inverse-text;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-nav__link {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

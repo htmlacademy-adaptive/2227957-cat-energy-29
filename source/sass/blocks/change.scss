@@ -1,12 +1,34 @@
+.change {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.change__item:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
+}
+
 .change__indicator {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .change__description {
   font-size: 14px;
   line-height: 14px;
   text-transform: lowercase;
+  margin: 0;
 }
