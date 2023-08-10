@@ -34,8 +34,8 @@
       </nav>
     </header>
     <main class="catalog-main main">
-      <h1 class="main__title">Каталог продукции</h1>
-      <section class="products">
+      <h1 class="main__title catalog-main__title">Каталог продукции</h1>
+      <section class="catalog-main--products products">
         <h2 class="visually-hidden">Основные товары.</h2>
         <ul class="products__list">
           <li class="products__item product">
@@ -43,11 +43,11 @@
             <h3 class="product__name">Cat Energy PRO 500 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>500 г</dd>
+              <dd class="product__data--value">500 г</dd>
               <dt>Вкус</dt>
-              <dd>Курица</dd>
+              <dd class="product__data--value">Курица</dd>
               <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <dd class="product__data--value">700 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -56,11 +56,11 @@
             <h3 class="product__name">Cat Energy PRO 1000 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>1000 г</dd>
+              <dd class="product__data--value">1000 г</dd>
               <dt>Вкус</dt>
-              <dd>Курица</dd>
+              <dd class="product__data--value">Курица</dd>
               <dt>Цена</dt>
-              <dd>1000 ₽</dd>
+              <dd class="product__data--value">1000 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -69,11 +69,11 @@
             <h3 class="product__name">Cat Energy PRO 500 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>500 г</dd>
+              <dd class="product__data--value">500 г</dd>
               <dt>Вкус</dt>
-              <dd>Рыба</dd>
+              <dd class="product__data--value">Рыба</dd>
               <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <dd class="product__data--value">700 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -82,11 +82,11 @@
             <h3 class="product__name">Cat Energy PRO 1000 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>500 г</dd>
+              <dd class="product__data--value">500 г</dd>
               <dt>Вкус</dt>
-              <dd>Рыба</dd>
+              <dd class="product__data--value">Рыба</dd>
               <dt>Цена</dt>
-              <dd>1000 ₽</dd>
+              <dd class="product__data--value">1000 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -95,11 +95,11 @@
             <h3 class="product__name">Cat Energy slim 500 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>500 г</dd>
+              <dd class="product__data--value">500 г</dd>
               <dt>Вкус</dt>
-              <dd>Гречка</dd>
+              <dd class="product__data--value">Гречка</dd>
               <dt>Цена</dt>
-              <dd>400 ₽</dd>
+              <dd class="product__data--value">400 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -108,11 +108,11 @@
             <h3 class="product__name">Cat Energy slim 1000 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>1000 г</dd>
+              <dd class="product__data--value">1000 г</dd>
               <dt>Вкус</dt>
-              <dd>Гречка</dd>
+              <dd class="product__data--value">Гречка</dd>
               <dt>Цена</dt>
-              <dd>700 ₽</dd>
+              <dd class="product__data--value">700 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
@@ -121,32 +121,32 @@
             <h3 class="product__name">Cat Energy slim 500 г</h3>
             <dl class="product__data">
               <dt>Масса</dt>
-              <dd>500 г</dd>
+              <dd class="product__data--value">500 г</dd>
               <dt>Вкус</dt>
-              <dd>Рис</dd>
+              <dd class="product__data--value">Рис</dd>
               <dt>Цена</dt>
-              <dd>500 ₽</dd>
+              <dd class="product__data--value">500 ₽</dd>
             </dl>
             <a class="product__order button" href="#">Заказать</a>
           </li>
+          <li class="products__item product product--more show-more">
+            <a class="product__img show-more__plus" href="#">
+              <img>
+            </a>
+            <h3 class="product__name show-more__title">Показать еще 100500 товаров</h3>
+            <p class="product__data show-more__subtitle">На самом деле вкусов гораздо больше!</p>
+            <a class="product__order show-more__button button button--inverse" href="#">Показать все</a>
+          </li>
         </ul>
-        <div class="products__item products__item--more show-more">
-          <a class="show-more__plus" href="#">
-            <img>
-          </a>
-          <h3 class="show-more__title">Показать еще 100500 товаров</h3>
-          <p class="show-more__subtitle">На самом деле вкусов гораздо больше!</p>
-          <a class="show-more__button button button--inverse" href="#">Показать все</a>
-        </div>
       </section>
-      <section class="extra-products">
+      <section class="catalog-main--extra extra-products">
         <h2 class="extra-products__title">Дополнительные товары</h2>
         <ul class="extra-products__list">
           <li class="extra-products__item extra-product">
             <h3 class="extra-product__title">Сахарозаменитель</h3>
             <dl class="extra-product__data">
               <dt>1 упаковка (100 г)</dt>
-              <dd>200 ₽</dd>
+              <dd class="extra-product__data--value">200 ₽</dd>
             </dl>
             <a class="extra-product__order button" href="#">Заказать</a>
           </li>
@@ -154,7 +154,7 @@
             <h3 class="extra-product__title">Питьевая вода</h3>
             <dl class="extra-product__data">
               <dt>5 литров</dt>
-              <dd>50 ₽</dd>
+              <dd class="extra-product__data--value">50 ₽</dd>
             </dl>
             <a class="extra-product__order button" href="#">Заказать</a>
           </li>
@@ -162,7 +162,7 @@
             <h3 class="extra-product__title">Молоко</h3>
             <dl class="extra-product__data">
               <dt>1 литр</dt>
-              <dd>100 ₽</dd>
+              <dd class="extra-product__data--value">100 ₽</dd>
             </dl>
             <a class="extra-product__order button" href="#">Заказать</a>
           </li>
@@ -170,13 +170,13 @@
             <h3 class="extra-product__title">Витамины</h3>
             <dl class="extra-product__data">
               <dt>1 упаковка (30 г)</dt>
-              <dd>300 ₽</dd>
+              <dd class="extra-product__data--value">300 ₽</dd>
             </dl>
             <a class="extra-product__order button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
-      <section class="promotion">
+      <section class="catalog-main--promotion promotion">
         <p class="promotion__description">Закажите все и получите чехол для кота в подарок!</p>
       </section>
     </main>
