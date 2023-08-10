@@ -20,6 +20,7 @@
     background-image: url("../img/index-hero-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
@@ -45,11 +46,11 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  width: 450px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    width: 450px;
   }
 
   @media (min-width: $desktop-width) {
