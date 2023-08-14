@@ -1,5 +1,13 @@
 .features {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 105px 47px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .features__title {
@@ -7,12 +15,28 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features__item {
@@ -20,6 +44,17 @@
   height: 60px;
   margin: 20px 0 50px;
   position: relative;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 150px;
+    width: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
 
   &::before {
     content: "";
@@ -29,5 +64,10 @@
     background-color: rgba(104, 183, 56, 0.85);
     top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }

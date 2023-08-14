@@ -1,6 +1,22 @@
 .reviews {
   background-color: #eaeaea;
   padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 100px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 0 110px 75px;
+  }
+}
+
+.reviews__container {
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
 }
 
 .reviews__title {
@@ -8,6 +24,23 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .reviews__cost {
@@ -15,4 +48,10 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 175px;
+    text-align: end;
+  }
 }

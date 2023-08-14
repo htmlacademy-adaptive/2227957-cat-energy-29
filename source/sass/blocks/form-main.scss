@@ -1,8 +1,18 @@
 .form-main {
   font-family: "Oswald", "Arial", sans-serif;
   padding: 27px 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 60px;
+  }
 }
 
 .form-main__subtitle {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

@@ -2,21 +2,26 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-img logo-img" href="index.html">
-        <img width="33" height="38" alt="Логотип Cat Energy.">
-      </a>
-      <a class="main-header__logo-title logo-title" href="index.html">
-        <img width="101" height="18" alt="Cat Energy.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-img logo-img" href="index.html">
+          <img width="33" height="38" alt="Логотип Cat Energy.">
+        </a>
+        <a class="main-header__logo-title logo-title" href="index.html">
+          <img width="101" height="18" alt="Cat Energy.">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
+      </div>
+      <nav class="main-nav main-nav--background">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link">Главная</a>
@@ -34,7 +39,7 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <img width="280" height="270" alt="Упаковка корма Cat Energy.">
+        <img class="hero__img" width="280" height="270" alt="Упаковка корма Cat Energy.">
         <a class="hero__button button" href="form.html">Подобрать программу</a>
       </section>
       <section class="programs">
@@ -62,26 +67,38 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Живой пример</h2>
-        <p class="reviews__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="reviews__weight-change change">
-          <dt class="change__indicator">5 кг</dt>
-          <dd class="change__description">Снижение веса</dd>
-          <dt class="change__indicator">60 дней</dt>
-          <dd class="change__description">Затрачено времени</dd>
-        </dl>
-        <p class="reviews__cost">Затраты на питание: 15 000 РУБ.</p>
-        <img class="reviews__img-before" width="280" height="256" alt="Фото до.">
-        <img class="reviews__img-after" width="280" height="256" alt="Фото после.">
-        <button class="reviews__img-toggle"></button>
-        <!-- Слайдер сделаю позже -->
+        <div class="reviews__container">
+          <h2 class="reviews__title">Живой пример</h2>
+          <p class="reviews__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="reviews__wrapper">
+            <dl class="reviews__weight-change change">
+              <div class="change__item">
+                <dt class="change__indicator">5 кг</dt>
+                <dd class="change__description">Снижение веса</dd>
+              </div>
+              <div class="change__item">
+                <dt class="change__indicator">60 дней</dt>
+                <dd class="change__description">Затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="reviews__cost">Затраты на питание: 15 000 РУБ.</p>
+        </div>
+        </div>
+        <div class="reviews__slider slider">
+          <img class="slider__img-before" width="280" height="256" alt="Фото до.">
+          <img class="slider__img-after" width="280" height="256" alt="Фото после.">
+          <button class="slider__img-toggle"></button>
+          <!-- Слайдер сделаю позже -->
+        </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__address address">
         <h2 class="visually-hidden">Мы находимся.</h2>
-        <p class="address__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="address__wrapper">
+          <p class="address__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <img class="address__map" alt="Карта с расположением магазина">
       </section>
       <section class="main-footer__contacts contacts">

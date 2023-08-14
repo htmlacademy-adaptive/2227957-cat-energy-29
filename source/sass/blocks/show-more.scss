@@ -1,17 +1,7 @@
-.show-more {
-  text-align: center;
-}
-
-.show-more__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 .show-more__subtitle {
   color: #444444;
-  font-size: 12px;
-  line-height: 16px;
+  display: block;
+  width: 170px;
+  justify-self: center;
+  text-align: center;
 }

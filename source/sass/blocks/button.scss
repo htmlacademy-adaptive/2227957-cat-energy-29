@@ -3,10 +3,16 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $inverse-text;
+  background-color: $accent-color;
   text-decoration: none;
   border: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--inverse {
