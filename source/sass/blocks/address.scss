@@ -4,6 +4,7 @@
 
 .address__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 26px 20px;
   background-color: #f2f2f2;
