@@ -6,6 +6,9 @@
 .change__item {
   display: flex;
   flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .change__item:first-child {
@@ -15,14 +18,21 @@
 }
 
 .change__indicator {
+  box-sizing: border-box;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  width: 124px;
+  padding: 15px 20px 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
   }
 }
 
@@ -30,5 +40,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: lowercase;
+  text-align: center;
   margin: 0;
+  position: absolute;
+  background-color: #eaeaea;
+  width: 80px;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
 }

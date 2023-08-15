@@ -70,4 +70,44 @@
       height: 80px;
     }
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+
+.features__item--leaf {
+  &::after {
+    background-image: url(../../img/features/features-leaf.svg);
+  }
+}
+
+.features__item--water {
+  &::after {
+    background-image: url(../../img/features/features-water.svg);
+  }
+}
+
+.features__item--catlery {
+  &::after {
+    background-image: url(../../img/features/features-catlery.svg);
+  }
+}
+
+.features__item--watch {
+  &::after {
+    background-image: url(../../img/features/features-watch.svg);
+  }
 }

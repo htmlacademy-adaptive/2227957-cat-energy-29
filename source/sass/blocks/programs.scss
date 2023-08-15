@@ -79,7 +79,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
+  margin: 10px 0 29px;
   margin-left: 70px;
 
   @media (min-width: $tablet-width) {
@@ -95,6 +95,9 @@
 }
 
 .programs__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 60%;
   }
@@ -107,6 +110,14 @@
   color: $basic-text;
   text-decoration: none;
   text-transform: uppercase;
+  padding-right: 47px;
+  background-image: url(../../img/index__programs/program__link-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

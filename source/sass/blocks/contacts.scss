@@ -9,9 +9,18 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+  }
+}
+
+.contacts__logo-title {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

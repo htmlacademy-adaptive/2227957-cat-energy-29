@@ -1,16 +1,20 @@
 .address {
-  padding: 26px 20px;
   position: relative;
 }
 
 .address__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 26px 20px;
+  background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
     left: 110px;
+    padding: 60px 80px;
+    background-color: #ffffff;
+    gap: 65px;
   }
 }
 
@@ -24,6 +28,8 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -39,5 +45,14 @@
 
   @media (min-width: $desktop-width) {
     text-align: start;
+  }
+}
+
+.address__map {
+  width: 100%;
+  height: 320px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
