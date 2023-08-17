@@ -36,7 +36,7 @@
     top: 59px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(../../img/promotion-img.svg);
+    background-image: url("../img/promotion-img.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {

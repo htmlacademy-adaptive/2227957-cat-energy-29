@@ -90,24 +90,24 @@
 
 .features__item--leaf {
   &::after {
-    background-image: url(../../img/features/features-leaf.svg);
+    background-image: url("../img/features/features-leaf.svg");
   }
 }
 
 .features__item--water {
   &::after {
-    background-image: url(../../img/features/features-water.svg);
+    background-image: url("../img/features/features-water.svg");
   }
 }
 
 .features__item--catlery {
   &::after {
-    background-image: url(../../img/features/features-catlery.svg);
+    background-image: url("../img/features/features-catlery.svg");
   }
 }
 
 .features__item--watch {
   &::after {
-    background-image: url(../../img/features/features-watch.svg);
+    background-image: url("../img/features/features-watch.svg");
   }
 }
