@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 40px;
   row-gap: 14px;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr max-content;
@@ -13,7 +14,12 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 285px 244px;
     grid-template-rows: 1fr;
+    align-items: center;
   }
+}
+
+.extra-product:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-product__title {

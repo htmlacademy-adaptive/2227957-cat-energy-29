@@ -26,10 +26,4 @@
   padding: 11px 0 14px;
   display: grid;
   grid-template-columns: 1fr;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
-
-  @media (min-width: $tablet-width) {
-    border: 1px solid #cdcdcd;
-  }
 }

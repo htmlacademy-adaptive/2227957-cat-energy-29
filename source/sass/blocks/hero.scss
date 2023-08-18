@@ -80,14 +80,6 @@
   padding: 14px 26px;
   width: max-content;
 
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 526px;
   }

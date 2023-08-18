@@ -8,9 +8,23 @@
   padding-top: 20px;
   width: 100%;
 
+  &:hover path {
+    fill: $accent-color;
+  }
+
+  &:active path {
+    fill: $accent-color;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 168px;
     justify-content: flex-end;
     gap: 23px;
+    padding: 0;
   }
+}
+
+.html-academy__name {
+  margin: 0;
 }
