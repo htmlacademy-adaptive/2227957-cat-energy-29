@@ -30,6 +30,8 @@
   margin: 0 20px;
   padding: 20px;
   position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
 
   @media (min-width: $tablet-width) {
     padding: 77px 52px 57px;
@@ -117,6 +119,7 @@
   color: $basic-text;
   text-decoration: none;
   text-transform: uppercase;
+  width: max-content;
   padding-right: 47px;
   background-image: url("../img/index__programs/program__link-arrow.svg");
   background-repeat: no-repeat;

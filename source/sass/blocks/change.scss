@@ -45,7 +45,18 @@
   position: absolute;
   background-color: #eaeaea;
   width: 80px;
-  bottom: -14px;
+  top: calc(100% - 14px);
   left: 50%;
   transform: translateX(-50%);
+  padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    max-width: 125px;
+    top: calc(100% - 10px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
