@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 0 110px 69px;
   }
 }
 
@@ -15,10 +15,13 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -26,6 +29,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  counter-reset: features-counter 0;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: flex;
@@ -45,11 +49,15 @@
   margin: 20px 0 50px;
   position: relative;
   align-items: center;
+  counter-increment: features-counter 1;
 
   @media (min-width: $tablet-width) {
+    height: auto;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 151px;
+    padding-bottom: 57px;
     width: 35%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,10 +72,55 @@
     background-color: rgba(104, 183, 56, 0.85);
     top: 0;
     left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
+      top: 40px;
       width: 80px;
       height: 80px;
     }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(features-counter);
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      color: #f2f2f2;
+      font-size: 280px;
+      line-height: 280px;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+.features__item--leaf {
+  &::before {
+    background-image: url("../img/features/features-leaf.svg");
+  }
+}
+
+.features__item--water {
+  &::before {
+    background-image: url("../img/features/features-water.svg");
+  }
+}
+
+.features__item--catlery {
+  &::before {
+    background-image: url("../img/features/features-catlery.svg");
+  }
+}
+
+.features__item--watch {
+  &::before {
+    background-image: url("../img/features/features-watch.svg");
   }
 }

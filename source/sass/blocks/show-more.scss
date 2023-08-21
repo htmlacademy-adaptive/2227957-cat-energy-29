@@ -1,7 +1,49 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 20px 40px;
+  }
+}
+
+.show-more__plus {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  padding-bottom: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.show-more__title {
+  width: 100%;
+  text-align: center;
+}
+
 .show-more__subtitle {
   color: #444444;
   display: block;
   width: 170px;
   justify-self: center;
   text-align: center;
+}
+
+.show-more__button {
+  width: 100%;
 }

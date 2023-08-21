@@ -1,9 +1,46 @@
+.extra-products__title-wrapper {
+  display: flex;
+  gap: 20px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 10px;
+    height: 40px;
+    border-bottom: 2px solid $accent-color;
+  }
+
+  &::before {
+    width: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+    }
+  }
+
+  &::after {
+    flex-grow: 1;
+  }
+}
+
 .extra-products__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0;
+  margin: 25px 0 36px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
@@ -12,10 +49,29 @@
 
 .extra-products__list {
   list-style: none;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    border: none;
+  }
 }
 
 .extra-products__item {
   padding: 13px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+  }
 }

@@ -1,7 +1,7 @@
 .hero {
   font-family: "Oswald", "Arial", sans-serif;
   color: $inverse-text;
-  background-color: rgba(104, 183, 56, 0.85);
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, rgba(255, 255, 255, 1) 302px, rgba(255, 255, 255, 1) 100%);
   position: relative;
   text-align: center;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 302px;
     top: 0;
     left: 0;
     background-image: url("../img/index-hero-background.png");

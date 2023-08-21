@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   padding: 40px 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
@@ -9,9 +10,26 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 110px;
+  }
+}
+
+.contacts__logo-title {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover g {
+    fill: #3e3e3e;
+  }
+
+  &:active g {
+    fill: #6b6b6b;
   }
 }
