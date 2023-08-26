@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.slider__img-before {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__img-after {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__bar {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: #666666;
+}
+
+.slider__img-toggle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
