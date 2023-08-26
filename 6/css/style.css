@@ -500,6 +500,57 @@
   margin-bottom: 0;
 }
 
+.programs-item__img {
+  z-index: 2;
+  position: absolute;
+}
+
+.programs-item__img-slim {
+  top: 21px;
+  left: 27px;
+}
+@media (min-width: 768px) {
+  .programs-item__img-slim {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: auto;
+    right: 93px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs-item__img-slim {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
+  }
+}
+
+.programs-item__img-pro {
+  top: 35px;
+  left: 13px;
+}
+@media (min-width: 768px) {
+  .programs-item__img-pro {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 29px;
+  }
+}
+@media (min-width: 1440px) {
+  .programs-item__img-pro {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
+  }
+}
+
 .programs__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -518,7 +569,7 @@
 }
 @media (min-width: 1440px) {
   .programs__title {
-    margin-left: 124px;
+    margin-left: 214px;
     margin-bottom: 73px;
   }
 }
@@ -756,6 +807,12 @@
     text-align: end;
   }
 }
+@media (min-width: 1440px) {
+  .reviews__cost {
+    width: auto;
+    text-align: start;
+  }
+}
 
 .change {
   display: flex;
@@ -821,6 +878,46 @@
   .change__description {
     background-color: #f2f2f2;
   }
+}
+
+.slider {
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .slider {
+    margin-left: auto;
+  }
+}
+
+.slider__img-before {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__img-after {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__bar {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: #666666;
+}
+
+.slider__img-toggle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .address {
@@ -968,8 +1065,7 @@
 .html-academy:hover path {
   fill: #68b738;
 }
-.html-academy:active path {
-  fill: #68b738;
+.html-academy:active {
   opacity: 0.3;
 }
 @media (min-width: 768px) {
