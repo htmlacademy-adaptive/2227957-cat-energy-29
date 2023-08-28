@@ -21,6 +21,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 13px 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    padding: 0;
+  }
 }
 
 .main-header__logo:hover {

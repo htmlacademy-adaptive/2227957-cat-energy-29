@@ -56,4 +56,9 @@
     width: 175px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    text-align: start;
+  }
 }

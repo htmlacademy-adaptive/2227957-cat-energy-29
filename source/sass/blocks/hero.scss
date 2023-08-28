@@ -46,11 +46,13 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     width: 450px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,17 +64,36 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
   }
 }
 
 .hero__img {
+  display: block;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
+    width: 552px;
+    height: 499px;
     position: absolute;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 709px;
+    height: 609px;
+    top: -81px;
+    bottom: auto;
+    right: 55px;
+    left: auto;
   }
 }
 

@@ -12,8 +12,7 @@
     fill: $accent-color;
   }
 
-  &:active path {
-    fill: $accent-color;
+  &:active {
     opacity: 0.3;
   }
 
