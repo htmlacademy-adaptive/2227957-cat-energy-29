@@ -111,17 +111,18 @@
         </div>
         </div>
         <div class="reviews__slider slider">
-          <picture class="slider__img-before">
+          <picture class="slider__img slider__img-before">
             <source media="(min-width: 768px)" srcset="img/index-cat-slider/slider__img-before-tablet@1x.png 1x, img/index-cat-slider/slider__img-before-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__img-before" src="img/index-cat-slider/slider__img-before-mobile@1x.png" srcset="img/index-cat-slider/slider__img-before-mobile@1x.png 1x, img/index-cat-slider/slider__img-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до функционального питания Cat Energy.">
           </picture>
-          <picture class="slider__img-after">
+          <picture class="slider__img slider__img-after">
             <source media="(min-width: 768px)" srcset="img/index-cat-slider/slider__img-after-tablet@1x.png 1x, img/index-cat-slider/slider__img-after-tablet@2x.png 2x" width="560" height="512">
             <img class="slider__img-after" src="img/index-cat-slider/slider__img-after-mobile@1x.png" srcset="img/index-cat-slider/slider__img-after-mobile@1x.png 1x, img/index-cat-slider/slider__img-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота после функционального питания Cat Energy.">
           </picture>
+          <input type="range" min="0" max="100" value="50" aria-label="Проценты показа фото" class="range">
           <div class="slider__bar" style="top: 0; left: 50%;">
             <button class="slider__img-toggle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><path fill="#666" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><path fill="currentColor" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/><rect width="38" height="38" x="1" y="1" stroke="currentColor" stroke-width="2" rx="19"/></svg>
               <span class="visually-hidden">Кнопка слайдера</span>
             </button>
           </div>
