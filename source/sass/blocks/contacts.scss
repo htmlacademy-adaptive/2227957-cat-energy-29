@@ -10,7 +10,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
-    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,4 +31,8 @@
   &:active svg g {
     fill: #6b6b6b;
   }
+}
+
+.contacts__social {
+  max-width: 200px;
 }
