@@ -5,12 +5,14 @@
   @media (min-width: $tablet-width) {
     padding: 45px 30px 100px 30px;
     background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px, #ffffff);
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     background: linear-gradient(to bottom, #ffffff 136px, #f2f2f2 136px, #f2f2f2);
     padding: 0 110px 75px;
+    border: none;
   }
 }
 
@@ -31,6 +33,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
   }
 }
 
@@ -60,5 +66,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     text-align: start;
+    display: flex;
+    gap: 63px;
   }
 }

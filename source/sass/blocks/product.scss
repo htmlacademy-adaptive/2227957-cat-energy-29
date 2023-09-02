@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content max-content 1fr min-content;
+    grid-template-rows: 210px max-content 1fr min-content;
     border: none;
     background: linear-gradient(to bottom, #ffffff 81px, #f2f2f2 81px);
   }
@@ -28,9 +28,11 @@
 }
 
 .product__name {
+  color: #222222;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 400;
   width: 76px;
   margin: 0;
