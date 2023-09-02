@@ -54,6 +54,11 @@
     background-color: $accent-color;
     color: $accent-color;
   }
+
+  &:active {
+    color: #5eaa2f;
+    opacity: 0.6;
+  }
 }
 
 .slider__img-toggle {
