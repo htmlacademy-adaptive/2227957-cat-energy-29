@@ -117,6 +117,7 @@
   align-items: center;
   min-height: 30px;
   margin: 0 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 70px;
@@ -156,6 +157,12 @@
 
   &:focus {
     outline-color: #444444;
+  }
+
+  &[type="number"],
+  &[type="number"]:focus,
+  &[type="number"]:hover {
+    appearance: none;
   }
 }
 
@@ -213,27 +220,35 @@
   }
 }
 
-.program-form__input-email {
-  padding-right: 40px;
-  background-image: url("../img/program-form/program-form-email.svg");
-  background-repeat: no-repeat;
-  background-position: center right 12px;
-}
-
+.program-form__input-email,
 .program-form__input-tel {
   padding-right: 44px;
-  background-image: url("../img/program-form/program-form-tel.svg");
-  background-repeat: no-repeat;
-  background-position: center right 12px;
 
   @media (min-width: $tablet-width) {
     padding-right: 48px;
-    background-position: center right 14px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 52px;
-    background-position: center right 16px;
+  }
+
+  & + svg {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  &:focus + svg {
+    color: $accent-color;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid + svg {
+    color: $color-invalid;
   }
 }
 
@@ -290,6 +305,10 @@
     top: 0;
     left: 0;
     border: 1px solid #cdcdcd;
+  }
+
+  &:hover + .program-form__control-mark {
+    border-color: #bababa;
   }
 
   &:focus + .program-form__control-mark {

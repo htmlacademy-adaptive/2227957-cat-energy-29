@@ -78,8 +78,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 552px;
-    height: 499px;
+    width: 709px;
+    height: 609px;
     position: absolute;
     z-index: -1;
     left: 50%;
@@ -88,8 +88,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 709px;
-    height: 609px;
+    width: 552px;
+    height: 499px;
     top: -81px;
     bottom: auto;
     right: 55px;

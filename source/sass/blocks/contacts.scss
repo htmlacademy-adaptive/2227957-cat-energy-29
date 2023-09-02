@@ -10,7 +10,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 55px 30px;
-    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,16 +19,17 @@
 
 .contacts__logo-title {
   padding-bottom: 20px;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 
-  &:hover g {
-    fill: #3e3e3e;
+  &:hover {
+    color: #3e3e3e;
   }
 
-  &:active g {
-    fill: #6b6b6b;
+  &:active {
+    color: #6b6b6b;
   }
 }

@@ -1,9 +1,8 @@
 .show-more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-bottom: 1px solid #ebebeb;
   background: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px max-content 1fr min-content;
 
   @media (min-width: $tablet-width) {
     padding: 50px 20px 40px;
@@ -18,6 +17,10 @@
   height: 30px;
   position: relative;
   margin: 0 auto 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 
   &::before,
   &::after {
@@ -38,9 +41,11 @@
 .show-more__title {
   width: 100%;
   text-align: center;
+  margin: 0 auto 8px;
 
   @media (min-width: $tablet-width) {
     width: 135px;
+    margin-bottom: 23px;
   }
 }
 
@@ -50,12 +55,8 @@
   width: 170px;
   justify-self: center;
   text-align: center;
-}
-
-.show-more__button {
-  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    padding-bottom: 82px;
   }
 }

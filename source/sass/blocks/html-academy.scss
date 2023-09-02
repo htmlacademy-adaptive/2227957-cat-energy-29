@@ -8,11 +8,12 @@
   padding-top: 20px;
   width: 100%;
 
-  &:hover path {
-    fill: $accent-color;
+  &:hover {
+    color: $accent-color;
   }
 
   &:active {
+    color: $accent-color;
     opacity: 0.3;
   }
 

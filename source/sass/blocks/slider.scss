@@ -45,6 +45,7 @@
   align-items: center;
   justify-content: center;
   width: 4px;
+  border-radius: 2px;
   transform: translateX(50%);
   background-color: #666666;
   color: #666666;
@@ -52,6 +53,11 @@
   &:hover {
     background-color: $accent-color;
     color: $accent-color;
+  }
+
+  &:active {
+    color: #5eaa2f;
+    opacity: 0.6;
   }
 }
 

@@ -1,6 +1,10 @@
 .change {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
 }
 
 .change__item {
